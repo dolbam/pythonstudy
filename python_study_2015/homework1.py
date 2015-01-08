@@ -24,4 +24,34 @@ for x in range(2, 10):
 	print("#" + str(x) + "´Ü")
 	for y in range(1,10):
 		print x,'X',y,'=',x*y
-    
+print "\n"
+
+print "#5"
+def greet(name):
+	print 'hello', name
+greet("bob")
+greet("john")
+print "\n"
+
+print "#6"
+temperature = int(input('input temperature\n:'))
+if temperature >= 72 :
+	print "too hot"
+else:
+	print "too cold" 
+print "\n"
+
+print "#7"
+import urllib2
+logofile = urllib2.urlopen("http://c1.img.netmarble.kr/web/netmarble/main/v/img/logo.gif")
+filename = 'netmarble-logo.gif'
+output = open(filename,'wb')
+output.write(logofile.read())
+output.close()
+
+
+print "#8"
+from datetime import datetime
+now = datetime.now()
+print 'Today : %s-%s-%s %s:%s' % (now.year, now.month, now.day, now.hour, now.minute)
+
